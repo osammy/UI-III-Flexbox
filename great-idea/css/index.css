@@ -65,29 +65,29 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Global styles, affects all html pages */
+
 .container {
 	width:900px;
-	display:flex;
-	flex-direction: column;
+	/*display:flex;*/
+	/*flex-direction: column;*/
 	margin: 0 auto;
 }
 
-/*header {
-	display:flex;
-	flex-direction:column
-}*/
 
 header nav {
 	/*width:900px;*/
 	display:flex;
 	justify-content: space-between;
-	
+	/*border:1px solid black;	*/
 }
 
 header nav p a{
 	text-decoration:none;
 	color:#c7c7c7;
 }
+
+/* end global style */
 
 .each-section  {
 	display:flex;
@@ -191,4 +191,22 @@ footer {
 
 .three-on-row {
 	width:30%;
+}
+
+/* media queries */
+@media screen and (max-width: 480px) {
+
+  header nav {
+	display:flex;
+	flex-direction: column;
+	text-align:center;
+}
+
+  header nav p {
+	padding:10px;
+}
+
+
+
+
 }
